@@ -349,23 +349,21 @@ footer{border-top:1px solid var(--ink);padding:2rem 4rem;display:flex;justify-co
   <div class="upload-row reveal visible">
     <div>
       <p class="upload-block-label">Synopsis</p>
-      <div class="doc-upload-zone" id="zone-synopsis" style="border-style: solid; border-color: var(--red);">
-        <input type="file" accept=".pdf,.doc,.docx" onchange="loadDoc(event,'synopsis')" style="display: none;">
-        <div class="doc-icon" style="opacity: 0;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="1.5" style="opacity: 0;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="opacity: 0;"></path><polyline points="14 2 14 8 20 8" style="opacity: 0;"></polyline></svg></div>
-        <p class="doc-upload-label" style="opacity: 0;">Drop PDF or Word doc here</p>
-        <p class="doc-upload-types" style="opacity: 0;">.pdf .doc .docx</p>
-        <div class="doc-loaded" id="loaded-synopsis" style="display: flex;"><div class="doc-check" style="opacity: 1;">✓</div><p class="doc-filename" id="name-synopsis" style="opacity: 1; pointer-events: auto; cursor: pointer; text-decoration: underline;">Last Stop (Synopsis).pdf</p><span class="doc-change" onclick="clearDoc('synopsis',event)" style="display: none;">Change file</span></div>
-      </div>
+      <div class="doc-upload-zone" id="zone-screenplay" style="border-style: solid; border-color: var(--red);">
+  <div class="doc-loaded" id="loaded-screenplay" style="display:flex;">
+    <div class="doc-check" style="opacity:1;">✓</div>
+    <a class="doc-filename" id="name-screenplay" href="https://drive.google.com/file/d/1loT9olqpH3S3uupn0CUzBXMHYgRjOoH_/view?usp=sharing" target="_blank" style="opacity:1; cursor:pointer; text-decoration:underline; color:var(--red);">Last Stop (Screenplay).pdf</a>
+  </div>
+</div>
     </div>
     <div>
       <p class="upload-block-label">Full Screenplay</p>
-      <div class="doc-upload-zone" id="zone-screenplay" style="border-style: solid; border-color: var(--red);">
-        <input type="file" accept=".pdf,.doc,.docx" onchange="loadDoc(event,'screenplay')" style="display: none;">
-        <div class="doc-icon" style="opacity: 0;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="1.5" style="opacity: 0;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" style="opacity: 0;"></path><polyline points="14 2 14 8 20 8" style="opacity: 0;"></polyline></svg></div>
-        <p class="doc-upload-label" style="opacity: 0;">Drop PDF or Word doc here</p>
-        <p class="doc-upload-types" style="opacity: 0;">.pdf .doc .docx</p>
-        <div class="doc-loaded" id="loaded-screenplay" style="display: flex;"><div class="doc-check" style="opacity: 1;">✓</div><p class="doc-filename" id="name-screenplay" style="opacity: 1; pointer-events: auto; cursor: pointer; text-decoration: underline;">Last Stop (Full Screenplay).pdf</p><span class="doc-change" onclick="clearDoc('screenplay',event)" style="opacity: 0; display: none;">Change file</span></div>
-      </div>
+      <div class="doc-upload-zone" id="zone-synopsis" style="border-style: solid; border-color: var(--red);">
+  <div class="doc-loaded" id="loaded-synopsis" style="display:flex;">
+    <div class="doc-check" style="opacity:1;">✓</div>
+    <a class="doc-filename" id="name-synopsis" href="https://drive.google.com/file/d/15YjOiMlRf0W7tTxv3QTdMv-PjQE78AWp/view?usp=sharing" target="_blank" style="opacity:1; cursor:pointer; text-decoration:underline; color:var(--red);">Last Stop (Synopsis).pdf</a>
+  </div>
+</div>
     </div>
   </div>
 </div>
