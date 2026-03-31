@@ -157,8 +157,8 @@ footer{border-top:1px solid var(--ink);padding:2rem 4rem;display:flex;justify-co
 
 <div id="toolbar">
   <div id="tb-hint" style="display: none;">Click any text to edit it.<br>Photo captions: click directly to type.<br>Save downloads your updated file.</div>
-  <button class="tb-btn" id="btn-save" onclick="saveFile()" style="display: block;">↓ Save as File</button>
-  <button class="tb-btn" id="btn-edit" onclick="toggleEdit()">Edit Mode</button>
+  <button class="tb-btn" id="btn-save" onclick="saveFile()" style="display: none;">↓ Save as File</button>
+  <button class="tb-btn" id="btn-edit" onclick="toggleEdit()" style="display: none;">Edit Mode</button>
 </div>
 
 <header>
@@ -408,7 +408,13 @@ function toggleEdit(){
     document.querySelector('.video-hint').style.display='none';
   }
 }
-
+  
+document.addEventListener('keydown',(e)=>{
+  if(e.ctrlKey&&e.shiftKey&&e.key==='E'){
+    toggleEdit();
+  }
+});
+  
 // SAVE
 function saveFile(){
   const clone=document.documentElement.cloneNode(true);
